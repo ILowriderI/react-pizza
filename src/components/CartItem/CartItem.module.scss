@@ -1,0 +1,11 @@
+.correct_btns{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    border-radius: 50%;
+    &:hover{
+        transform: scale(1.15);
+        box-shadow: 0 0 4px 3px #4361ee;
+       
+    }
+}

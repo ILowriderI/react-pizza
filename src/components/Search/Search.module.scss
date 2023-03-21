@@ -1,0 +1,45 @@
+
+.cont{
+    position: relative;
+
+    .inp{
+        padding: 10px 17px;
+        border-radius: 25px;
+        width: 290px;
+        border: 2px solid #6a040f;
+        font-size: 16px;
+        background-image: url(../../img/search.svg);
+        background-repeat: no-repeat;
+        background-position:  5% 50%;
+        background-size: 9%;
+        opacity: 0.75;
+        transition: all ease-in-out .15s;
+        padding-left: 50px;
+         &:focus{
+            box-shadow:  0 0 6px 3px #f18701;
+            width: 305px;
+        }
+        
+    }
+
+ img{
+    position: absolute;
+    
+    right: 15px;
+    top: 9px;
+    width: 23px;
+    height: 23px;
+    cursor: pointer;
+    opacity: 0.4;
+    &:hover{
+        opacity: 0.9;
+    }
+ }
+
+}
+
+
+
+
+
+
