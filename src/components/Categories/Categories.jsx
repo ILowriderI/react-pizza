@@ -1,7 +1,6 @@
 import { useState } from "react";
 
-
- export const categoryies = [
+export const categoryies = [
   "All",
   "Meat",
   "Vegetarian",
@@ -10,10 +9,7 @@ import { useState } from "react";
   "Сheesy",
 ];
 
-const Categories = ({value,onClickCategory}) => {
- 
-
- 
+const Categories = ({ value, onClickCategory }) => {
   return (
     <div className="categories">
       <ul>
@@ -33,35 +29,3 @@ const Categories = ({value,onClickCategory}) => {
   );
 };
 export default Categories;
-
-/*
-const Categories = ({value,onClickCategory}) => {
-  const [activeInd, setActiveInd] = useState(0);
-
-  const categoryies = [
-    "All",
-    "Meat",
-    "Vegetarian",
-    "Grill",
-    "Spicy",
-    "Closed",
-  ];
-  return (
-    <div className="categories">
-      <ul>
-        {categoryies.map((item, index) => {
-          return (
-            <li
-              onClick={() => setActiveInd(index)}
-              className={activeInd === index ? "active" : ""}
-              key={index + "a"}
-            >
-              {item}
-            </li>
-          );
-        })}
-      </ul>
-    </div>
-  );
-};
-*/

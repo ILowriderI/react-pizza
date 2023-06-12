@@ -9,30 +9,22 @@ import Cart from "../../pages/Cart";
 import "../../scss/app.scss";
 import PizzaPage from "../../pages/PizzaPage";
 
-
 const App = () => {
-
-
   return (
     <div>
-     
-        <div className="wrapper">
-          <Header />
-          <div className="content">
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/cart" element={<Cart />} />
-              <Route path="/pizza/:id" element={<PizzaPage />} />
-              <Route path="*" element={<NotFound />} />
-            </Routes>
-          </div>
+      <div className="wrapper">
+        <Header />
+        <div className="content">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/cart" element={<Cart />} />
+            <Route path="/pizza/:id" element={<PizzaPage />} />
+            <Route path="*" element={<NotFound />} />
+          </Routes>
         </div>
-     
+      </div>
     </div>
   );
 };
 
 export default App;
-/*
- 
-*/
